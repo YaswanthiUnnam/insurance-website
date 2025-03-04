@@ -53,4 +53,13 @@ This project involves the development of a complete insurance company website us
 This project successfully developed an interactive and structured insurance company website, demonstrating proficiency in HTML and CSS. The inclusion of various sections and interactive elements ensures a comprehensive learning experience in frontend web development.
 
 
+## Contributors
+<strong>Yaswanthi Unnam</strong>
+
+## Credits
+<strong>V8 TechWorks</strong>
+
+## References
+[https://youtu.be/kOcxKpI6SEc?si=kDoNhiJ8QhIKD005]
+
 
