@@ -1,0 +1,747 @@
+/* Importing the custom font */
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+/* Global styles */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Title styling */
+h2 {
+    color: royalblue;
+    font-family: Sigmar;
+}
+
+/* Header styling */
+.header {
+    background-image: url(Images/hero.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Header layout */
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #ffdfff;
+    text-shadow: #fbfcfb;
+    top: 10px;
+}
+
+/* Navigation link styles */
+.links {
+    display: flex;
+    gap: 80px;  /* Space between links */
+}
+
+.link-item {
+    color: white; 
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.link-item:hover {
+    color: #ddd; /* Light gray on hover */
+}
+
+/* Styling for the right side (buttons, icons) */
+.right-side {
+    position: absolute;
+    display: flex;
+    right: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.left-side {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    left: 10px;
+    top: 2px;
+    justify-content: space-evenly;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: #fbfcfb;
+}
+
+/* Button styles in the right side section */
+.right-side button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #23a6f0;
+    color: #fbfcfb;
+    font-size: 13px;
+    font-weight: bold;
+    width: 180px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.right-side-icon {
+    font-size: 55px;
+}
+
+/* Main section in header */
+.header-main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 100px auto;
+    width: 60%;
+    z-index: 999;
+}
+
+/* Additional form styling */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Max width for the form */
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+/* Form title (Login heading) */
+h1 {
+    margin-top: 70px;
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+.header-main-section h1 {
+    margin-top: 70px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Label styling for input fields */
+label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Input field styling */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Remove line breaks between input and button */
+br {
+    display: none;
+}
+
+.header-main-section-head{
+    font-size: 50px;
+    text-align: center;
+}
+.header-main-section-desc{
+    margin-top: 30px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+.header-main-section-btn {
+    margin-bottom: 20px; /* Reduce space below the buttons */
+    padding-bottom: 0;
+}
+
+.header-main-section-btn button:first-child{
+    background-color: #23a6f0;
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 15px;
+    color: #fbfcfb;
+    width: 150px;
+    
+}
+.header-main-section-btn button:nth-child(2){
+    border-radius: 25px;
+    font-size: 15px;
+    margin-left: 20px;
+    color: #fbfcfb;
+    padding: 15px;
+    border: 2px solid #fbfcfb;
+    background-color: #23a6f0;
+    width: 150px;
+    
+}
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    width: 80vw;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.option-item{
+    background-color: #fbfcfb;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 20px;
+    height: 100px;
+}
+.option-item:nth-child(3){
+    background-color: #23a6f0;
+    color: #fbfcfb;
+}
+.options-icons{
+    color: #23a6f0;
+    font-size: 50px;
+}
+.option-item h1{
+    color: #252b42;
+}
+.option-item:nth-child(3) .options-icons{
+    color: #fbfcfb;
+}
+.option-item span{
+    font-size: 18px;
+}
+.benefits{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 200px 100px;
+}
+.benefit-item{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.benefit-icon{
+    color: #23a6f0;
+    font-size: 50px;
+}
+.benefit-item h4{
+    color: #252b42;    
+}
+.benefit-item span{
+    font-size: 20px;
+}
+.industry{
+    background-color: #fbfcfb;
+    height:100vh;
+    padding: 30px;
+    margin-top: 20px; /* Reduce space above the industry section */
+    padding-top: 0;
+}
+.industry-header{
+    color: #252b42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.industry-description{
+    color: #252b42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    width: 60%;
+    margin: 100px 250px;
+}
+.client{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    justify-content: space-evenly;
+}
+.client-item{
+    height: 320px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #AAA;
+    border-radius: 5px;
+}
+.client-item .client-image{
+    height: 150px;
+    width: 150px;
+    padding-top: 20px;
+    margin: 0px auto;
+}
+.client-desc{
+    font-weight: 200;
+    margin-top: 30px;
+    text-align: center;
+}
+.ratings{
+    margin: 30px;
+}
+.sponsors{
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sponsors img{
+    object-fit: contain;
+}
+.newsletter{
+    background-image: linear-gradient(to right, rgb(7, 7, 87),#b00cf4);
+    height: 300px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.newsletter-header{
+    color: #fbfcfb;
+    margin-left: 50px;
+    width:  400px;
+}
+.newsletter-input{
+    background-color: #fbfcfb;
+    width: 250px;
+    display: flex;
+    height: 60px;
+    width: 30%;
+    border-radius: 5px;
+    margin-right: 100px;
+}
+.newsletter-input input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+.newsletter-input button{
+    border: none;
+    background-color: #23a6f0;
+    color: #fbfcfb;
+    font-size: 20px;
+    padding-right: 9px;
+    margin: 5px;
+}
+.plans{
+    background-color: #fbfcfb;
+}
+.plans-header{
+    text-align: center;
+    width: 30%;
+    margin: 100px auto;
+}
+.plans-header h3{
+    color: #252b42;   
+}
+.plans-header p{
+    text-align: center;
+    font-size: 14px;   
+}
+.plan-card{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.plan-card-item{
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    border: 2px solid #23a6f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plan-card-item:nth-child(2){
+    padding-top: 120px;
+    background-color: #252b42;
+    color: #fbfcfb;
+    border: none;
+}
+.plan-card-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+.plan-card-item h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #252b42;
+}
+.plan-card-item span{
+    display: flex;
+    width: 200px;
+    text-align: center;
+    margin: auto 50px;
+}
+.price-dollar{
+    display: flex;
+    align-items: center;
+    margin: auto 50px;
+}
+.price-dollar-header{
+    font-weight: 900;
+    font-size: 35px;
+    margin-right: 10px;
+    color: #23a6f0;
+}
+.price-dollar-price p:first-child{
+    font-weight: 900;
+    color: #23a6f0;
+}
+.price-dollar-price p:last-child{
+    color: #23a6f0;
+    opacity: 0.6;
+}
+.price-desc-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+    width: 100%;
+}
+.price-desc-item p{
+    font-weight: 700;
+    text-align: right;
+    width: 100%;
+}
+.check-icon{
+    height: 20px;
+    border-radius: 50%;
+    width: 20px;
+    padding: 5px;
+    background-color: #3cB043;
+    color: #fbfcfb;
+    font-size: 16px;
+}
+/* Free Plan: 3 green, 2 gray */
+.plan-card-item:nth-child(1) .price-desc-item:nth-child(-n+3) .check-icon {
+    background-color: #28A745; /* Green */
+}
+.plan-card-item:nth-child(1) .price-desc-item:nth-child(n+4) .check-icon {
+    background-color: #AAA; /* Gray */
+}
+
+/* Standard Plan: 4 green, 1 gray */
+.plan-card-item:nth-child(2) .price-desc-item:nth-child(-n+4) .check-icon {
+    background-color: #28A745; /* Green */
+}
+.plan-card-item:nth-child(2) .price-desc-item:nth-child(5) .check-icon {
+    background-color: #AAA; /* Gray */
+}
+
+/* Premium Plan: All 5 green */
+.plan-card-item:nth-child(3) .price-desc-item .check-icon {
+    background-color: #28A745; /* Green */
+}
+
+.btn-price{
+    width: 300px;
+    background-color: #23a6f0;
+    border-radius: 5px;
+    font-weight: 25px;
+    color: #fbfcfb;
+    border: none;
+    padding: 10px;
+    font-weight: 900;
+}
+.reach{
+    background-color: #252b42;
+    margin-top: 75px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin-bottom: -300px;   
+}
+
+.reach h1{
+    color: white;
+}
+
+.reach-desc{
+    flex: 1;
+    margin: 10px 300px;
+    width: 150px;
+    color: #fbfcfb;
+    width: 20%;  
+}
+.reach-image{
+    flex: 1;
+    height: 200px;
+    width: 300px;
+    margin: 100px;   
+}
+
+
+
+
+/* Book Appointment Section */
+.appointment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbfcfb;
+    margin: 0 300px;
+    overflow: hidden;
+    width: 50vw;
+    height: 500px;
+    margin-bottom: 20px; /* Reduce space below */
+    padding-bottom: 0; /* Ensure no extra padding */
+}
+
+.appointment-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.appointment-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.appointment-desc {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.appointment-desc h1 {
+    text-align: center;
+    color: #252b42;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.input-description {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px; /* Only one value */
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.input-description:last-child {
+    margin-bottom: 0; /* Removes extra space for last input */
+}
+
+.button-container {
+    margin-top: 15px; /* Ensures space above the button */
+    text-align: center; /* Centers the button */
+}
+
+label {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+select, input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Button Styling */
+.appointment-btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.appointment-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+.consult{
+
+    
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    columns: #333;
+
+    margin-top: 20px; /* Reduce space above */
+    padding-top: 0; /* Ensure no extra padding */
+    margin-bottom: 50px;
+}
+
+.consult-btn button{
+
+    padding: 10px;
+
+    border: none;
+
+    background-color: #23a6f0;
+
+    color: #fbfcfb;
+
+    font-weight: 900;
+
+    border-radius: 5px;
+}
+
+
+.footer-upper {
+    display: flex;
+    justify-content: space-between; /* Ensures equal spacing */
+    align-items: flex-start; /* Aligns titles to the top */
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Each Footer Section */
+.footer-item {
+    flex: 1; /* Makes all sections take equal space */
+    min-width: 180px; /* Prevents sections from shrinking too much */
+    text-align: left; /* Aligns text properly */
+}
+
+/* Footer Titles */
+.footer-item h3 {
+    color: #252b42;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left; /* Aligns titles left */
+}
+
+/* Footer List Items */
+.footer-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-item li {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Footer Icons */
+.footer-icon {
+    color: #23a6f0;
+    font-size: 30px;
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+/* Contact Info Section (Fix Alignment) */
+.footer-item:nth-child(5) li {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.footer-lower{
+
+   
+    background-color: #fbfcfb;
+}
+
+
+.footer-lower-item{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+
+    margin: 30px 150px;
+
+
+    padding-top: 20px;
+
+
+}
+
+.footer-lower p{
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    
+
+
+    color: #AAA;
+
+
+
+}
+
